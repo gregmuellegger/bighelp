@@ -49,6 +49,17 @@ class OrImplementer(object):
 
 
 class TestBigHelp(TestUtilsMixin, unittest.TestCase):
+    def test_left_of_pipe_syntax(self):
+        call_mock = Mock()
+        self.H.__call__ = call_mock
+        obj = object()
+
+        result = self.H | obj
+
+        call_mock.assert_called_once_with(obj)
+        # Returns nothing.
+        self.assertTrue(result is None)
+
     def test_pipe_syntax(self):
         call_mock = Mock()
         self.H.__call__ = call_mock
