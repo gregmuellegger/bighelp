@@ -16,7 +16,7 @@ requirements = [
 ]
 
 test_requirements = [
-
+    'mock',
 ]
 
 setup(
