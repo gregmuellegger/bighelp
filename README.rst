@@ -1,3 +1,25 @@
+=======
+bighelp
+=======
+
+.. image:: https://badge.fury.io/py/bighelp.png
+    :target: http://badge.fury.io/py/bighelp
+
+.. image:: https://travis-ci.org/gregmuellegger/bighelp.png?branch=master
+    :target: https://travis-ci.org/gregmuellegger/bighelp
+
+.. image:: https://pypip.in/d/bighelp/badge.png
+    :target: https://pypi.python.org/pypi/bighelp
+
+
+This is a **bighelp** for everybody who's using the python interactive mode.
+
+* Free software: BSD license
+* Documentation: https://bighelp.readthedocs.org.
+
+Usage
+-----
+
 ::
 
     >>> import H
