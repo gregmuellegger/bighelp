@@ -16,13 +16,37 @@ class BigHelp(object):
             pprint(value, stream=self.stdout)
 
     def __ror__(self, other):
+        '''
+        other | H
+        '''
         self.__call__(other)
-        return other
+
+    def __lt__(self, other):
+        '''
+        H < other
+        '''
+        self.__call__(other)
+
+    def __rgt__(self, other):
+        '''
+        other > H
+        '''
+        self.__call__(other)
 
     def __lshift__(self, other):
+        '''
+        H << other
+
+        Returns ``other``.
+        '''
         self.__call__(other)
         return other
 
     def __rrshift__(self, other):
+        '''
+        other >> H
+
+        Return ``other``.
+        '''
         self.__call__(other)
         return other
